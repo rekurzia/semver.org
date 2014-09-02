@@ -9,8 +9,7 @@ Sémantické verzovanie 2.0.0
 Zhrnutie
 --------
 
-Ak sa číslo verzie skladá podľa formátu MAJOR.MINOR.PATCH, tak zväčšujeme číslo:
-
+V čísle verzie vo formáte MAJOR.MINOR.PATCH zväčšujeme číslo:
 1. MAJOR verzie, keď sme spravili zmeny, ktoré nie sú spätne kompatibilné,
 2. MINOR verzie, keď sme pridali funkcionalitu so zachovaním spätnej
 kompatibility,
@@ -32,15 +31,15 @@ stane nočnou morou. Ak je špecifikácia závislostí príliš striktná, hroz�
 ostanete na jednej verzii *(angl. version lock)* a nebudete mať možnosť prejsť
 na ďalšiu verziu bez toho, aby ste vydali ďalšie verzie všetkých balíčkov, na
 ktorých závisí. Naopak, ak je špecifikácia závislostí príliš voľná, prídete na
-to, že váš systém je kompatibilný s viac verziami, ako je potrebné. A teda,
-peklo závislostí je, keď ste zviazaný určitou verziou, prípadne nie je presne
+to, že váš systém je kompatibilný s viac verziami, ako je potrebné. V pekle
+závislostí sa nachádzate, ak ste zviazaný určitou verziou, prípadne nie je presne
 špecifikované, ktorú máte použiť. Jednoducho, bráni vám to v tom, aby ste sa so
 svojim projektom pohli bezpečne vpred.
 
 Riešením tohto problému je jednoduchý súbor pravidiel, ktorý
-určuje ako budú čísla verzií priraďované a zväčšované. Tieto pravidlá sú
+určuje, ako budú čísla verzií priraďované a zväčšované. Tieto pravidlá sú
 založené (no nie nevyhnutne obmedzené) na už existujúcich bežne zaužívaných
-praktikách ako vo vývoji otvoreného, či uzavretého softvéru. Pre fungovanie
+praktikách vo vývoji otvoreného, či uzavretého softvéru. Pre fungovanie
 tohto systému si musíte najskôr zadefinovať rozhranie popisujúce spôsob,
 akým sa bude komunikovať s vaším systémom (ďalej len API). Môže byť zadefinované
 formou dokumentácie, prípadne vynútené samotným kódom. Bez ohľadu na formu akou
